@@ -1,0 +1,467 @@
+:root {
+    --text-primary-color: #cfcfcf;
+    --text-secondary-color: #cfcfcf;
+    --body-background-gradient: linear-gradient(180deg, #342d26, #3c2e1d);
+    --card-background-gradient: linear-gradient(170deg, #53493e, #63513d);
+    --border-radius: .5rem;
+    --primary-color: #F6C236;
+    --on-primary-color: #54493f;
+    --brown-light: #53493e;
+}
+
+.App {
+    background-color: whitesmoke;
+    color: var(--text-secondary-color);
+}
+
+.body {
+    color: var(--text-secondary-color);
+}
+
+.table {
+    color: var(--text-secondary-color) !important;
+    --bs-table-color: var(--text-secondary-color) !important;
+    --bs-table-bg: transparent !important;
+    border-color: transparent;
+}
+
+.table tbody td svg path {
+    fill: var(--text-secondary-color);
+}
+
+.card {
+    border-radius: 1rem !important;
+    padding: .6rem 1rem;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
+    color: var(--text-secondary-color) !important;
+}
+
+.menu .menu-items .card .card-img img {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3));
+}
+
+.navbar .navbar-actions .content {
+    order: 2;
+    color: var(--text-secondary-color);
+    margin-left: 10px;
+}
+
+.navbar .navbar-actions .link-primary {
+    margin-left: 0.2rem;
+    color: var(--primary-color) !important;
+}
+
+.btn-default svg path {
+    fill: #dce6f6;
+    color: var(--primary-color)
+}
+
+.menu .menu-items .card .card-body .price {
+    color: #ffc720;
+}
+
+.menu .menu-items .card {
+    border: 0;
+    background-color: #ffc720;
+    border-bottom: 1px solid #dce6f6;
+    border-radius: 0;
+    flex: 1 1;
+    display: flex;
+    flex-direction: inherit;
+    margin-bottom: 15px
+}
+
+.cover .cover-content .cover-content-center-content {
+    background: rgba(47, 42, 36, 0.9);
+    border: 1px solid #dce6f6;
+    border-radius: 15px;
+    color: var(--text-secondary-color);
+}
+
+.form-select {
+    color: var(--text-secondary-color);
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffc720' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    border: 1px solid #ffc720;
+    border-radius: var(--border-radius);
+}
+
+.form-select:focus {
+    border-color: #ffc720; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(255, 199, 32, 0.3); /* Add focus shadow */
+}
+
+.design-v2 .modal-product-full .modal-product-full-right {
+    background-color: var(--brown-light);
+    border-radius: 1rem;
+}
+
+.design-v2 .modal-product-full .modal-header {
+    background-color: var(--brown-light);
+}
+
+.design-v2 .modal-product-full .product-item-footer {
+    background-color: var(--brown-light);
+}
+
+.design-v2 .modal-product-full .product-item .product-item-footer {
+    border-radius: 1rem;
+    padding-top: 10px;
+}
+
+.design-v2 .input-group-quantity .input-group-append button, .design-v2 .input-group-quantity .input-group-prepend button {
+    background-color: #e8f1ff0f;
+}
+
+.design-v2 .input-group-quantity .input-group-append button:hover .design-v2 .input-group-quantity .input-group-prepend button:hover {
+    color: var(--primary-color);
+}
+
+.input-group-text {
+    color: var(--text-secondary-color);
+}
+
+.btn-close {
+    background: transparent url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 16 16' %3E%3Cpath fill= '%23cfcfcf' d= 'M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z' /%3E%3C/svg%3E) 50 % / 1 em auto no-repeat;
+}
+
+.App .menu .menu-items .card {
+    background: var(--card-background-gradient);
+}
+
+.menu .menu-items .card {
+    border-bottom: 0px solid #dce6f6;
+}
+
+.design-v2 .btn.disabled-view {
+    opacity: 100;
+    color: var(--text-secondary-color);
+    background-color: #747068e0;
+}
+
+.design-v2 .btn.disabled-view .price {
+    color: var(--text-secondary-color);
+}
+
+.design-v2 .modal-product-full .product-item .product-modifier-option-pick label {
+    background-color: transparent;
+}
+
+.design-v2 .modal-product-full .product-option-with-image {
+    background-color: #c2c2c20f;
+}
+
+.body .btn-primary.disabled, .body .btn-primary:disabled {
+    border-color: var(--primary-color);
+    background: #5d5a51f0;
+    color: var(--text-secondary-color);
+    opacity: 100;
+}
+
+.form-group input.form-control, .form-group select.form-control, .design-v2 .input-group-quantity {
+    color: var(--text-secondary-color);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.navbar {
+    background-color: #54493f;
+}
+
+.text-danger {
+    --bs-text-opacity: 1;
+    color: var(--text-secondary-color) !important;
+    border: 1px solid #e13929;
+    border-radius: var(--border-radius);
+    background: #a4261a33;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn-close {
+    background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath  fill='%23cfcfcf'  d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+}
+
+.App .form-group input.form-control {
+    border-radius: var(--border-radius);
+}
+
+.design-v2 .btn-primary {
+    color: #54493f;
+}
+
+.list-group-item:first-child, .cart .card-payment .list-group .list-group-item {
+    background: #e8f1ff0f;
+    border: 1px solid #F6C238;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text-secondary-color);
+    border-radius: var(--border-radius);
+    margin: 5px;
+}
+
+.cart .card {
+    background: var(--card-background-gradient);
+    border: 0px solid #F6C238;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar .navbar-brand {
+    max-width: 100px;
+}
+
+.cover .cover-content .cover-content-center-content .badge-default {
+    color: var(--text-secondary-color);
+}
+
+.navbar .navbar-actions > .btn {
+    margin: auto;
+    color: var(--text-primary-color)
+}
+
+.design-v2 .btn-primary .price {
+    color: #54493f;
+}
+
+.design-v2 .btn-primary:disabled .price {
+    color: var(--text-secondary-color);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #f6c23647;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: 0 0 0 .25rem #f6c23647;
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .modal-full .modal-body {
+        background-color: #54493f;
+    }
+}
+
+.design-v2 .modal-product-full .product-item .product-modifier-option-pick input:checked + label,
+.design-v2 .modal-product-full .product-item .product-modifier-option-pick input:checked + label .price {
+    color: #54493f;
+}
+
+footer.footer .footer-social, footer.footer .footer__use, footer.footer .logo img {
+    display: none;
+}
+
+footer.footer .logo {
+    margin: auto;
+    content: url(https://www.maxipizza.pl/images/v2/logo/maxi_logo_white.png);
+}
+
+.body .App .footer {
+    background: linear-gradient(0deg, rgb(0 0 0 / 40%), transparent);
+}
+
+.body .btn-default:hover, .body .btn-default.active {
+    background: var(--primary-color);
+    color: #54493f;
+}
+
+.modal.show .modal-dialog {
+    border-radius: 1rem;
+    box-shadow: 0px 2px 100px 0rem #f6c2361f;
+}
+
+.cart {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
+
+.body .App {
+    background: var(--body-background-gradient);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: var(--text-secondary-color);
+    opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+    color: var(--text-secondary-color);
+    opacity: 1
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary-color);
+    opacity: 1
+}
+
+textarea {
+    border-radius: var(--border-radius);
+}
+
+.body .App .sticky-fixed, .body .App .nav-tabs-top {
+    background-color: #352d24;
+}
+
+.body .container-menu-picker .nav-link.active {
+    border-radius: var(--border-radius);
+}
+
+.design-v2 .modal-product-full .modal-content {
+    border-radius: 1rem;
+}
+
+.form-types .h5 svg, .form-types h5 svg {
+    fill: var(--text-secondary-color);
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+}
+
+.design-v2 .input-group-quantity .input-group-append button:hover, .design-v2 .input-group-quantity .input-group-prepend button:hover {
+    color: var(--primary-color);
+}
+
+.body .App .sticky-fixed {
+    background: transparent;
+}
+
+
+.alert-danger {
+    background-color: rgba(156, 41, 52, 0.9) !important;
+    border-color: #db5a66;
+    border-radius: var(--border-radius) !important;
+    background-image: none !important;
+    color: var(--text-secondary-color)
+}
+
+.alert-danger button{
+    color: var(--primary-color)
+}
+
+.cart .card-payment .list-group .list-group-item:hover {
+    border-bottom: 1px solid #F6C232;
+}
+
+/*.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {*/
+/*    border-radius: var(--border-radius);*/
+/*    border-top-left-radius: 0;*/
+/*    border-bottom-left-radius: 0;*/
+/*}*/
+
+.header-strike span {
+    border-radius: .5rem;
+    padding: 7px 20px 7px 20px;
+}
+
+.modal-full .modal-content {
+    border-radius: 1rem;
+    background-color: var(--brown-light);
+}
+
+.cart .banks .bank-item img {
+    align-self: center;
+    border: 0px solid #dce6f6;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+
+.cart .banks .bank-item {
+    border: 3px solid var(#ffffff);
+    background: rgb(255 255 255);
+    margin-left: 10px;
+    border-radius: var(--border-radius);
+    align-content: center;
+    opacity: 0.5;
+}
+
+.cart .banks .bank-item.active, .cart .banks .bank-item:hover {
+    border: 3px solid var(--primary-color);
+    opacity: 1;
+}
+
+.cart .banks .bank-item.active img, .cart .banks .bank-item:hover img {
+    opacity: 1;
+}
+
+.design-v3 .nav-tabs-top .nav-item .nav-link {
+    color: var(--primary-color) !important;
+    border-bottom-color: var(--brown-light) !important;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.design-v3 .nav-tabs-top .nav-item.active .nav-link {
+    font-weight: 500;
+    border-bottom-color: var(--primary-color) !important;
+}
+
+.btn-secondary,
+.design-v3 .menu .menu-items .card .card-body .price {
+    color: var(--primary-color) !important;
+}
+
+.body.design-v3 .container-menu-picker .nav-link.active {
+    background-color: #f4f4f421;
+}
+
+.menu .btn-search-icon {
+    background: transparent;
+}
+
+.btn-default {
+    text-shadow: 0 -0px 0 #fff;
+    background-image: -webkit-linear-gradient(top, #ffffff17 0, #f6c23600 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff17), to(#f6c23600));
+    background-image: linear-gradient(to bottom, #ffffff17 0, #f6c23600 100%);
+    color: var(--text-primary_color)
+}
+
+.design-v3 .container-menu-picker .btn-choose-menu, .design-v3 .container-menu-picker .menu-item-content {
+    background-color: var(--brown-light);
+}
+
+.design-v2 .modal-product-full .product-item .product-item-modifiers-errors {
+    --bs-text-opacity: 1;
+    color: var(--text-secondary-color) !important;
+    border: 1px solid #e13929;
+    border-radius: var(--border-radius);
+    background: #a4261a33;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-3 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.design-v3 .cart {
+    margin-top: 0;
+}
+
+.App .summary-container .cart .card {
+    border-bottom-width: 0 !important;
+    margin-bottom: 15px;
+}
+
+.summary-container .cart-response-restaurant .cart-response-info strong {
+    color: var(--primary-color) !important;
+}
