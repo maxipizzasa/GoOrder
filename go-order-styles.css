@@ -465,3 +465,7 @@ textarea {
 .summary-container .cart-response-restaurant .cart-response-info strong {
     color: var(--primary-color) !important;
 }
+
+.cart-sticky.sticky-fixed.sticky-fixed-cart.fixed-height-100 {
+    background-color: #352d24;
+}
