@@ -527,6 +527,10 @@ textarea {
     .container-menu-picker .nav-link {
         border: 1px solid;
     }
+
+    .cover2 .cover-content {
+        min-height: 18vw;
+    }
 }
 .container-menu-picker .nav-link:hover {
     background-color: rgba(108, 108, 108, 0.4);
