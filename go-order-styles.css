@@ -773,13 +773,13 @@ textarea {
     position: absolute;
     right: .4rem;
     font-size: 1.2rem;
+}
+.design-v2 .btn-primary .price:not(:empty) {
+    color: #ffffff;
+    padding: .6rem 1rem;
+    font-weight: 500;
     background-color: #5b5047;
     border-radius: .7rem;
     color: white;
-    padding: .4rem 1rem;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.design-v2 .btn-primary .price {
-    color: #ffffff;
-    font-weight: 500;
 }
