@@ -260,6 +260,36 @@ html {
     .modal-full .modal-body {
         background-color: #54493f;
     }
+    .design-v2 .modal-product-full .modal-header {
+        padding-top: 0;
+        padding-bottom: .3rem;
+        background-color: transparent;
+    }
+    .design-v2 .modal-product-full .product-item-img {
+        text-align: center;
+        margin-bottom: -1rem;
+    }
+    .design-v2 .modal-product-full .product-item-img img {
+        width: 60%;
+        padding-bottom: 0;
+    }
+    .btn-group-submit .input-group-quantity button {
+        width: auto;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .design-v2 .modal-product-full .modal-content,
+    .modal-full .modal-content {
+        border-radius: 0 !important;
+    }
+    .modal-full .modal-header .btn-close {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
 }
 
 .design-v2 .modal-product-full .product-item .product-modifier-option-pick input:checked + label,
