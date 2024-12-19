@@ -675,7 +675,8 @@ textarea {
 
 .product-item-modifiers .product-modifier-option button.btn-pick:not(:disabled):after,
 .product-option-multilevel:has(p.product-item-modifiers-errors) button.btn:not(:disabled):after,
-.product-item-modifiers .form-group:has(.error) .row-cols-2:after {
+.product-item-modifiers .form-group:has(.error) .row-cols-2:after,
+.btn-group-submit:has(button.btn-primary.btn.btn-submit:not(:disabled):not(.disabled-view))::after {
     content: "";
     background-image: url("https://www.maxipizza.pl/images/v2/svg/hand.svg");
     background-size: contain;
@@ -687,6 +688,13 @@ textarea {
     position: absolute;
     bottom: -1.2rem;
     z-index: 2;
+}
+.btn-group-submit:has(button.btn-primary.btn.btn-submit:not(:disabled):not(.disabled-view))::after {
+    left: 1rem;
+}
+
+.design-v2 .modal-product-full .product-item-img img {
+    filter: drop-shadow(-8px 8px 5px rgba(0, 0, 0, 0.3));
 }
 
 .product-option-multilevel:has(p.product-item-modifiers-errors) button.btn:not(:disabled):after {
