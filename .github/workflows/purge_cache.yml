@@ -1,0 +1,15 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send purge request to jsDelivr
+        run: |
+          curl -X GET "https://purge.jsdelivr.net/gh/maxipizzasa/GoOrder@main/go-order-styles.css"
