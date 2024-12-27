@@ -106,6 +106,7 @@ html {
 .design-v2 .modal-product-full .modal-header {
     background-color: var(--brown-light);
     border-radius: unset;
+    justify-content: space-between;
 }
 
 .design-v2 .modal-product-full .product-item-footer {
@@ -255,6 +256,10 @@ html {
 .btn-check:focus + .btn, .btn:focus {
     box-shadow: 0 0 0 .25rem #f6c23647;
     border-color: var(--primary-color);
+}
+
+.design-v2 .text-primary path, .design-v2 .text-primary svg {
+    fill: rgb(207, 207, 207);
 }
 
 @media (max-width: 768px) {
