@@ -105,6 +105,7 @@ html {
 
 .design-v2 .modal-product-full .modal-header {
     background-color: var(--brown-light);
+    border-radius: unset;
 }
 
 .design-v2 .modal-product-full .product-item-footer {
@@ -261,13 +262,15 @@ html {
         background-color: #54493f;
     }
     .design-v2 .modal-product-full .modal-header {
-        padding-top: 0;
-        padding-bottom: .3rem;
-        background-color: transparent;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: .6rem 0;
     }
     .design-v2 .modal-product-full .product-item-img {
         text-align: center;
         margin-bottom: -1rem;
+        z-index: 1002;
     }
     .design-v2 .modal-product-full .product-item-img img {
         width: 60%;
