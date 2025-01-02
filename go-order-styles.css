@@ -105,6 +105,8 @@ html {
 
 .design-v2 .modal-product-full .modal-header {
     background-color: var(--brown-light);
+    border-radius: unset;
+    justify-content: space-between;
 }
 
 .design-v2 .modal-product-full .product-item-footer {
@@ -256,9 +258,46 @@ html {
     border-color: var(--primary-color);
 }
 
+.design-v2 .text-primary path, .design-v2 .text-primary svg {
+    fill: rgb(207, 207, 207);
+}
+
 @media (max-width: 768px) {
     .modal-full .modal-body {
         background-color: #54493f;
+    }
+    .design-v2 .modal-product-full .modal-header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: .6rem 0;
+    }
+    .design-v2 .modal-product-full .product-item-img {
+        text-align: center;
+        margin-bottom: -1rem;
+        width: calc(100% - 1.5rem);
+        z-index: 1002;
+    }
+    .design-v2 .modal-product-full .product-item-img img{
+        padding-bottom: 0;
+    }
+    .btn-group-submit .input-group-quantity button {
+        width: auto;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .design-v2 .modal-product-full .modal-content,
+    .modal-full .modal-content {
+        border-radius: 0 !important;
+    }
+    .modal-full .modal-header .btn-close {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1010 ;
     }
 }
 
