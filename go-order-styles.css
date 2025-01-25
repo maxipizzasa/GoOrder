@@ -62,6 +62,10 @@ html {
     color: var(--primary-color)
 }
 
+.menu .menu-items .card .card-body {
+    overflow: hidden;
+}
+
 .menu .menu-items .card .card-body .price {
     color: #ffc720;
     text-align: right;
