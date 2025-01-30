@@ -3,13 +3,14 @@
     --text-secondary-color: #cfcfcf;
     --body-background-gradient: linear-gradient(180deg, #342d26, #3c2e1d);
     --card-background-gradient: linear-gradient(170deg, #53493e, #63513d);
+    --primary-background: #352d25;
     --border-radius: .5rem;
     --primary-color: #F6C236;
     --on-primary-color: #54493f;
     --brown-light: #53493e;
 }
 html {
-    background-color: #352d25;
+    background-color: var(--primary-background);
 }
 
 .App {
@@ -365,6 +366,10 @@ textarea {
 .body .App .sticky-fixed {
     background-color: transparent !important;
 }
+.body .App .sticky-fixed.sticky-fixed-categories{
+    background-color: var(--primary-background) !important;
+}
+
 .body .App .sticky-fixed.sticky-fixed-cart {
     background-color: #2a2620 !important;
 }
@@ -393,7 +398,7 @@ textarea {
 }
 
 .container-menu-picker.sticky-fixed.sticky-fixed-menu,
-.nav.nav-tabs-top.indiana-scroll-container{
+.nav.nav-tabs-top {
     background: transparent;
 }
 
