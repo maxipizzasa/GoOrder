@@ -1,0 +1,338 @@
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: row;
+  @include flex-center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  @include flex-center;
+}
+
+$primary-brown: #352D25FF;
+$lighter-brown: #58513e;
+$primary-brown-gradient: linear-gradient(180deg, #342d26, #3c2e1d);
+$lighter-brown-gradient: linear-gradient(170deg, #53493e, #63513d);
+$primary-orange: #F6C236;
+$primary-orange-dark: #e1ae24;
+$border-radius: .4rem;
+$text-secondary-color: #cfcfcf;
+
+body {
+  background-color: unset;
+  .App {
+    background-image: url('https://magic.maxipizza.net/images/v2/bcg/bcg.webp');
+  }
+  .container-fluid:has(.cover-new) {
+    position: relative;
+    --bs-gutter-x: unset;
+
+    .cover-new {
+      border-radius: unset;
+    }
+    .cover-header {
+      position: absolute;
+      bottom: 0;
+      padding: 0.5rem 1rem;
+      align-items: flex-start;
+      background-color: #261c1799;
+      border-radius: 0 1rem 0 0;
+      h1 {
+        color: white;
+        margin-bottom: .2rem;
+      }
+      .badge-container {
+        margin-bottom: unset;
+        .badge {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+        }
+      }
+    }
+  }
+  .container-fluid:has(h2):has(p) {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .body-container {
+    padding: .5rem 0 0 0;
+    background-color: white;
+    .menu-filters-1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: .5rem;
+      background-color: #261c17d4;
+      padding: 1rem 0;
+      border-radius: .4rem;
+      margin: 1rem;
+      .container-fluid:has(.btn-outline-primary):nth-of-type(2)button:before {
+        content: 'Czas dostawy:';
+        padding-right: .5rem;
+      }
+
+      .container-fluid:has(.menu-filters) {
+        width: fit-content;
+        margin: unset;
+
+        .cover-new {
+          border-radius: unset;
+        }
+      }
+    }
+    .list-nowraps.menu-filters {
+    }
+    .card {
+      .card-body {
+        .price-bottom {
+          text-align: right;
+          padding-right: 1rem;
+          color: $primary-orange-dark;
+        }
+      }
+    }
+  }
+  //.fade.modal.show {
+  //  padding: unset !important;
+  //}
+  .modal-header-back .back-icon.text-primary::after {
+    content: 'XXXXXXX';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .modal-body {
+    background-color: red !important;
+  }
+  .form-check {
+    padding: 1rem;
+    font-size: 1rem !important;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+  }
+  .form-check .form-check-input {
+    margin-left: inherit;
+  }
+  .card.card-cart.card-payment.is-invalid {
+    border: 0 !important;
+  }
+  .card-cart:has(.alert-danger),
+  .form-check:has(.is-invalid) {
+    background-color: rgb(164 62 71 / 80%);
+    border: 1px solid #e13929;
+    border-radius: $border-radius;
+    .card-cart-header {
+      color: white;
+      padding-top: .5rem;
+    }
+    .btn:focus,
+    .btn:active {
+      background-color: white !important;
+    }
+    .btn.btn-check-full {
+      background-color: #d9a4a9;
+    }
+    .btn.btn-check-full.active {
+      background-color: white;
+    }
+  }
+
+  .form-check:has(.is-invalid) .form-check-label,
+  .form-check:has(.is-invalid) .invalid-feedback {
+    color: white;
+    width: auto;
+    display: inline-flex;
+    gap: .5rem;
+  }
+
+  .form-check:has(.is-invalid) .invalid-feedback {
+    margin-top: unset;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .form-check .form-check-label {
+    display: inline-flex;
+    gap: .5rem;
+  }
+
+  .alert-danger {
+    background-color: rgba(156, 41, 52, 0.6) !important;
+    border-color: #db5a66;
+    border-radius: $border-radius !important;
+    background-image: none !important;
+    color: $text-secondary-color;
+  }
+
+  .form-group:has(p.error),
+  .product-option-multilevel:has(.product-item-modifiers-errors) {
+    background-color: #a4261a33;
+    border: 1px dashed red !important;
+    border-radius: .4rem;
+    padding: .6rem;
+    .btn.btn-primary {
+      background-color: #b05656b3;
+      border: none;
+    }
+  }
+  .btn:focus-visible,
+  .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #ca960a !important;
+    border-color: #5b5047 !important;
+  }
+
+  .btn-primary[disabled],
+  .btn-primary.disabled-view {
+    background: #7e7b72 !important;
+    border-color: #616057 !important;
+    color: lightgray !important;
+  }
+
+
+  .form-group:has(p.error) p.error,
+  .product-option-multilevel:has(p.product-item-modifiers-errors) p.product-item-modifiers-errors {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+
+  .product-modifier-option button.btn-pick {
+    position: relative;
+  }
+  .product-option-body {
+    .product-option-content {
+      .product-option-actions {
+        justify-content: flex-end;
+        .price {
+          color: $primary-orange-dark;
+          padding-right: .5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .product-item-modifiers .product-modifier-option button.btn-pick:not(:disabled):after,
+  .product-option-multilevel:has(p.product-item-modifiers-errors) button.btn:not(:disabled):after,
+  .product-item-modifiers .form-group:has(.error) .row-cols-2:after,
+    //.btn-group-submit:has(button.btn-primary.btn.btn-submit:not(:disabled):not(.disabled-view)) span::after,
+  .btn-group-submit:has(button.btn-primary.btn.btn-submit:not(:disabled):not(.disabled-view)) button.btn-submit::after {
+    content: "";
+    background-image: url("https://www.maxipizza.pl/images/v2/svg/hand.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    bottom: -1.2rem;
+    z-index: 2;
+    left: 0;
+  }
+
+  .btn-group-submit:has(.input-group-quantity) {
+    button.btn-submit-fixed-bottom:has(.btn-cart-price) {
+      padding-right: 4rem;
+      padding-left: .5rem;
+    }
+  }
+  footer.footer {
+    .footer-store {
+      background-color: rgba(38, 28, 23, 0.8);
+      .footer-list{
+        ul {
+          background-color: rgb(38, 28, 23);
+          padding: 1rem;
+          border-radius: 0 0 0.5rem 0.5rem;
+        }
+        .footer-list-item:hover {
+          background-color: rgb(38, 28, 23);
+        }
+      }
+    }
+    .footer-bottom {
+      min-height: 2rem;
+      .footer-powered-by {
+        display: none;
+      }
+    }
+  }
+
+  .modal {
+    .modal-content {
+      border-radius: 1rem;
+      .modal-product-content {
+        border-radius: 1rem;
+        .product-item-img {
+        }
+        .modal-product-full-right {
+          border-radius: 1rem;
+          .container-fluid {
+            .modal-header {
+              padding-right: .5rem;
+            }
+            .modal-body {
+              .product-item-content {
+
+              }
+              .product-option-body {
+
+              }
+              .product-item-footer {
+                border-radius: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-product-full .product-item .btn-submit .btn-cart-price {
+    position: absolute;
+    right: 0.4rem;
+    top: .85rem;
+  }
+  .btn-primary .right.btn-cart-price:not(:empty),
+  .btn-primary .price:not(:empty) {
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #5b5047;
+    border-radius: .7rem;
+    color: white;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .btn-primary .right.btn-cart-price:not(:empty) {
+    margin: -.5rem;
+  }
+  .summary-container {
+    .cart.cart-container {
+      background-color: white !important;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cart-sticky-container {
+    box-shadow: 10px 10px 10px -5px #2c2f314d;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .cart-sticky-container {
+    box-shadow: 10px 10px 10px -5px #2c2f314d;
+  }
+}
