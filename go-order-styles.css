@@ -63,15 +63,6 @@ body .body-container .card .card-body .price-bottom {
   padding-right: 1rem;
   color: #e1ae24;
 }
-body .modal-header-back .back-icon.text-primary::after {
-  content: "XXXXXXX";
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-body .modal-body {
-  background-color: red !important;
-}
 body .form-check {
   padding: 1rem;
   font-size: 1rem !important;
