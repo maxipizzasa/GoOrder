@@ -130,13 +130,12 @@ body {
   .card.card-cart.card-payment.is-invalid {
     border: 0 !important;
   }
-  .card-cart:has(.alert-danger),
-  .form-check:has(.is-invalid) {
-    background-color: rgb(164 62 71 / 80%);
-    border: 1px solid #e13929;
+  .card-cart:has(.alert-danger):not(:has(.active)),
+  .form-check:has(.is-invalid):not(:has(.active)) {
+    background-color: rgba(243, 212, 215, 0.8);
+    border: 1px dashed #e13929;
     border-radius: $border-radius;
     .card-cart-header {
-      color: white;
       padding-top: .5rem;
     }
     .btn:focus,
@@ -153,7 +152,7 @@ body {
 
   .form-check:has(.is-invalid) .form-check-label,
   .form-check:has(.is-invalid) .invalid-feedback {
-    color: white;
+    color: rgba(156, 41, 52, 0.6);
     width: auto;
     display: inline-flex;
     gap: .5rem;
@@ -208,6 +207,15 @@ body {
     border: none !important;
     background-color: transparent !important;
     padding: 0 !important;
+  }
+
+  .product-modifier-option1:has(.error) {
+    .product-option-with-image {
+      background-color: #f1f1f1;
+      .product-option-body {
+        opacity: .5;
+      }
+    }
   }
 
   .product-modifier-option button.btn-pick {
@@ -274,6 +282,7 @@ body {
   }
 
   .modal {
+    --bs-modal-margin: unset !important;
     .modal-content {
       border-radius: 1rem;
       .modal-product-content {
@@ -301,6 +310,13 @@ body {
         }
       }
     }
+  }
+
+  .modal-product-full .product-option-with-image .product-option-errors {
+    margin-top: 10px;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
   }
 
   .modal-product-full .product-item .btn-submit .btn-cart-price {
@@ -331,6 +347,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .modal {
+    margin: 1rem 0;
+  }
   .cart-sticky-container {
     box-shadow: 10px 10px 10px -5px #2c2f314d;
   }
