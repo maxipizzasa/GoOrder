@@ -99,18 +99,24 @@ body {
       }
     }
   }
-  //.fade.modal.show {
-  //  padding: unset !important;
-  //}
-  //.modal-header-back .back-icon.text-primary::after {
-  //  content: 'XXXXXXX';
-  //  position: absolute;
-  //  top: 1rem;
-  //  right: 1rem;
-  //}
-  //.modal-body {
-  //  background-color: red !important;
-  //}
+
+  .fade.modal.show {
+    padding: unset !important;
+  }
+  .modal-header-back .back-icon.text-primary::after {
+    content: "✕";
+    position: absolute;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    color: rgba(0, 0, 0, 0.3);
+    top: .5rem;
+    right: 0;
+    cursor: pointer;
+  }
+  .modal-body {
+    border-radius: 1rem;
+  }
+
   .form-check {
     padding: 1rem;
     font-size: 1rem !important;
