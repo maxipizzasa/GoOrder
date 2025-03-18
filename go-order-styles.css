@@ -5,6 +5,9 @@ body {
 body .App {
   background-image: url("https://magic.maxipizza.net/images/v2/bcg/bcg.webp");
 }
+body .main-content {
+  min-height: 100dvh;
+}
 body .container-fluid:has(.cover-new) {
   position: relative;
   --bs-gutter-x: unset;
@@ -33,6 +36,19 @@ body .container-fluid:has(.cover-new) .cover-header .badge-container .badge {
 }
 body .container-fluid:has(h2):has(p) h2 {
   margin-bottom: 0;
+}
+body .container-fluid:has(.card-advert) {
+  --bs-gutter-x: unset;
+}
+body .card.card-advert {
+  background: linear-gradient(135deg, #251c17 21.08%, #b88702 97.74%);
+  padding: 1rem 5rem;
+}
+body .card.card-advert .card-body p strong {
+  color: #F6C236;
+}
+body .card.card-advert .card-body svg path {
+  fill: #F6C236;
 }
 body .body-container {
   padding: 0.5rem 0 0 0;
@@ -207,6 +223,9 @@ body .btn-group-submit:has(.input-group-quantity) button.btn-submit-fixed-bottom
   padding-right: 4rem;
   padding-left: 0.5rem;
 }
+body footer.footer {
+  margin-bottom: 0;
+}
 body footer.footer .footer-store {
   background-color: rgba(38, 28, 23, 0.8);
 }
@@ -230,6 +249,15 @@ body .modal {
 body .modal .modal-content {
   border-radius: 1rem;
 }
+body .modal .modal-content .user .user-info {
+  background: linear-gradient(40deg, #251c17 21.08%, #b88702 97.74%);
+}
+body .modal .modal-content .voucher-card .card-content .card-body {
+  background: linear-gradient(40deg, #251c17 21.08%, #b88702 97.74%);
+}
+body .modal .modal-content .voucher-card .card-content .card-body .card-img {
+  background-color: #e1ae24;
+}
 body .modal .modal-content .modal-product-content {
   border-radius: 1rem;
 }
@@ -240,7 +268,7 @@ body .modal .modal-content .modal-product-content .modal-product-full-right .con
   padding-right: 0.5rem;
 }
 body .modal .modal-content .modal-product-content .modal-product-full-right .container-fluid .modal-body .product-item-footer {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 body .modal-product-full .product-option-with-image .product-option-errors {
   margin-top: 10px;
