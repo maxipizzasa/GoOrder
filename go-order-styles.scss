@@ -41,16 +41,20 @@ body {
     .cover-header {
       position: absolute;
       bottom: 0;
-      padding: 0.5rem 1rem;
+      padding: 0;
       align-items: flex-start;
-      background-color: #261c1799;
-      border-radius: 0 1rem 0 0;
+      display: flex;
+      flex-direction: column-reverse;
       h1 {
         color: white;
-        margin-bottom: .2rem;
+        margin-bottom: 0;
+        background-color: #261c1799;
+        border-radius: 0 1rem 0 0;
+        padding: .2rem 1rem;
       }
       .badge-container {
         margin-bottom: unset;
+        padding: .3rem 1rem;
         .badge {
           background-color: rgba(255, 255, 255, 0.2);
           color: white;
