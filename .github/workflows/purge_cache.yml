@@ -1,4 +1,4 @@
-name: Purge jsDelivr Cache
+name: Purge jsDelivr Cache for every css in root folder
 
 on:
   push:
@@ -10,6 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Get CSS files
+        id: cssfiles
+        run: |
+          echo "::set-output name=files::$(find . -name '*.css' -exec basename {} \;)"
+
       - name: Send purge request to jsDelivr
         run: |
-          curl -X GET "https://purge.jsdelivr.net/gh/maxipizzasa/GoOrder@main/go-order-styles.css"
+          for file in ${{ steps.cssfiles.outputs.files }}
+          do
+            echo "Purging: $file"
+            curl -X GET "https://purge.jsdelivr.net/gh/maxipizzasa/GoOrder@main/${file}"
+          done
