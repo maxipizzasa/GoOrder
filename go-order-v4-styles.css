@@ -45,14 +45,13 @@ body .container-fluid:has(.card-advert) {
     --bs-gutter-x: unset;
 }
 body .card.card-advert {
-    background: linear-gradient(135deg, #251c17 21.08%, #023900 97.74%);
-    padding: 1rem 5rem;
+    background: linear-gradient(135deg, #dc5959 5%, #9a5750f0 21%, #023900 98%);
 }
 body .card.card-advert .card-body p strong {
     color: #023900;
 }
 body .card.card-advert .card-body svg path {
-    fill: #023900;
+    fill: currentColor;
 }
 body .body-container {
     padding: 0.5rem 0 0 0;
@@ -310,6 +309,9 @@ body .summary-container .cart.cart-container {
     }
     .cart-sticky-container {
         box-shadow: 10px 10px 10px -5px rgba(44, 47, 49, 0.3019607843);
+    }
+    body .card.card-advert {
+        padding: 1rem 5rem;
     }
 }
 @media (min-width: 992px) {
