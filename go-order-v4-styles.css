@@ -49,6 +49,11 @@ body .card.card-advert {
 }
 body .card.card-advert .card-body p strong {
     color: #023900;
+    background-color: white;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 14px;
+    display: inline-block;
 }
 body .card.card-advert .card-body svg path {
     fill: currentColor;
