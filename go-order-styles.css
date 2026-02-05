@@ -8,5 +8,5 @@
 }
 
 .menu-item .card .card-img img {
-  border: none;
+  border: none !important;
 }
