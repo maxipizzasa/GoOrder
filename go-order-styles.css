@@ -6,3 +6,7 @@
 .hero {
   padding: 2rem 0 .25rem !important;
 }
+
+.menu-item .card .card-img img {
+  border: none;
+}
